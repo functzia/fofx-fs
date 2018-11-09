@@ -1,0 +1,13 @@
+{
+  "name": "fofx-fs",
+  "version": "1.0.0",
+  "description": "A filesystem plugin for the fofx platform",
+  "main": "index.js",
+  "repository": "git@github.com:functzia/fofx-fs.git",
+  "author": "Alon Niv <oakfang@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "string-template": "^1.0.0",
+    "watch": "^1.0.2"
+  }
+}

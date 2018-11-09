@@ -13,9 +13,10 @@ module.exports = function fsPlugin(_options, log) {
             if (err) {
               return log.error(err);
             }
-            return execute(
-              typeof content === 'string' ? content : content.toJSON()
-            );
+            if (typeof content !== 'string') {
+              content = content.toJSON();
+            }
+            return execute({ filename: name, content });
           })
         );
       });
